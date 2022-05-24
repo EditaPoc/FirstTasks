@@ -30,3 +30,18 @@ button.addEventListener('click', function() {
     this.style.display = 'none';
     antrasDivas.style.display = 'none';
 });
+
+var buttonKaramba = document.getElementById('karamba');
+buttonKaramba.addEventListener('click', function() {
+    var video = document.createElement('iframe');
+    // <iframe width="560" height="315" src="https://www.youtube.com/embed/BVqSTVJhD44" 
+    // title="YouTube video player" frameborder="0" 
+    // allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+    // gyroscope; picture-in-picture" allowfullscreen></iframe>
+    video.style.width = '600px';
+    video.style.height = '350px';
+    video.style.display = 'block';
+    video.style.margin = 'auto';
+    video.setAttribute('src', 'https://www.youtube.com/embed/BVqSTVJhD44');
+    document.body.appendChild(video);
+});
